@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.test.service.GalleryServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-15T20:46:21" hostname="MacBook-Air.local" time="0.286">
+  <properties/>
+  <testcase name="testDeleteById()" classname="com.test.service.GalleryServiceTest" time="0.286"/>
+  <system-out><![CDATA[05:46:19.874 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.test.service.GalleryServiceTest]: GalleryServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+05:46:19.914 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.test.TestApplication for test class com.test.service.GalleryServiceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-08-16T05:46:20.066+09:00  INFO 8973 --- [test] [    Test worker] com.test.service.GalleryServiceTest      : Starting GalleryServiceTest using Java 17.0.10 with PID 8973 (started by kgm in /Users/kgm/Downloads/codingTest)
+2024-08-16T05:46:20.066+09:00  INFO 8973 --- [test] [    Test worker] com.test.service.GalleryServiceTest      : No active profile set, falling back to 1 default profile: "default"
+2024-08-16T05:46:20.295+09:00  INFO 8973 --- [test] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-16T05:46:20.313+09:00  INFO 8973 --- [test] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2024-08-16T05:46:20.489+09:00  INFO 8973 --- [test] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-16T05:46:20.516+09:00  INFO 8973 --- [test] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-16T05:46:20.532+09:00  INFO 8973 --- [test] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-16T05:46:20.647+09:00  INFO 8973 --- [test] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-16T05:46:20.658+09:00  INFO 8973 --- [test] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-16T05:46:20.728+09:00  INFO 8973 --- [test] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a4a2090
+2024-08-16T05:46:20.729+09:00  INFO 8973 --- [test] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-16T05:46:21.122+09:00  INFO 8973 --- [test] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-16T05:46:21.144+09:00  INFO 8973 --- [test] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-16T05:46:21.302+09:00  WARN 8973 --- [test] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-16T05:46:21.465+09:00  INFO 8973 --- [test] [    Test worker] com.test.service.GalleryServiceTest      : Started GalleryServiceTest in 1.48 seconds (process running for 1.911)
+Hibernate: select ge1_0.id,ge1_0.gal_content_id,ge1_0.gal_content_type_id,ge1_0.gal_createdtime,ge1_0.gal_modifiedtime,ge1_0.gal_photographer,ge1_0.gal_photography_location,ge1_0.gal_photography_month,ge1_0.gal_search_keyword,ge1_0.gal_title,ge1_0.gal_web_image_url from gallery_entity ge1_0 where ge1_0.id=?
+Hibernate: delete from gallery_entity where id=?
+2024-08-16T05:46:21.748+09:00  INFO 8973 --- [test] [    Test worker] com.test.service.GalleryServiceTest      : 1 ID의 엔티티 삭제 완료
+Hibernate: select ge1_0.id,ge1_0.gal_content_id,ge1_0.gal_content_type_id,ge1_0.gal_createdtime,ge1_0.gal_modifiedtime,ge1_0.gal_photographer,ge1_0.gal_photography_location,ge1_0.gal_photography_month,ge1_0.gal_search_keyword,ge1_0.gal_title,ge1_0.gal_web_image_url from gallery_entity ge1_0 where ge1_0.id=?
+2024-08-16T05:46:21.754+09:00  INFO 8973 --- [test] [    Test worker] com.test.service.GalleryServiceTest      : 삭제된 엔티티 조회 결과: Optional.empty
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
